@@ -54,15 +54,17 @@ body {
 }
 
 .container {
-    max-width: 150rem;
+    max-width: 120rem;
+    padding: 0 3.2rem;
     margin: 0 auto;
 }
 
 .header {
-    padding: 6.4rem 0 9.6rem;
     background-color: #707070;
-    text-align: center;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10rem));
+    margin-bottom: 3.2rem;
+    padding: 6.4rem 0 9.6rem;
+    text-align: center;
 }
 
 .intro-span {
@@ -110,4 +112,38 @@ body {
 .nav-link:active {
     background-color: #888;
     color: #FFF;
+}
+
+.help-algo-section {
+    color: #888;
+}
+
+.algo-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.8rem;
+}
+
+.algo-text-box {
+    padding: 0 3.2rem 0 0;
+}
+
+.algo-text-box .secondary-title {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.algo-text-box .algo-introduction:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.algo-introduction {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
 }
