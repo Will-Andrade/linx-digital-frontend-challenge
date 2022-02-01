@@ -178,6 +178,8 @@ body {
     background-color: #FFF;
     border: .1rem solid #707070;
     border-radius: 4px;
+    cursor: pointer;
+    color: #888;
 }
 
 .thematic-break-section {
@@ -191,4 +193,78 @@ body {
 
 .thematic-break-section hr {
     flex: 1;
+}
+
+.selected-products-section {
+    color: #888;
+    margin-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-name {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.product-description,
+.old-price,
+.new-price {
+    margin-bottom: 1rem;
+}
+
+.product-description,
+.old-price,
+.installments {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.new-price {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 700;
+    display: block;
+}
+
+.product-btn {
+    width: 100%;
+    padding: .6rem 1.2rem;
+    color: #888;
+    background-color: #FFF;
+    border: .1rem solid #707070;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+
+.more-products-btn {
+    color: #888;
+    background-color: #FFF;
+    border: .1rem solid #707070;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
 }
