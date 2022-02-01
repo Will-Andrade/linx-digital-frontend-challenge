@@ -42,38 +42,44 @@
                 </div>
     
                 <form class="subscribe-form" action="#">
-                    <label for="full-name">Seu nome:</label>
-                    <input 
-                        type="text" 
-                        name="name" 
-                        id="full-name"
-                        placeholder="José Luís"
-                        autocomplete="off"
-                        required
-                    />
-    
-                    <label for="email">Seu email:</label>
-                    <input 
-                        type="email" 
-                        name="email" 
-                        id="email"
-                        placeholder="eu@exemplo.com.br"
-                        autocomplete="off"
-                        required
-                    />
-    
-                    <label for="full-name">CPF:</label>
-                    <input 
-                        type="text" 
-                        name="cpf" 
-                        id="full-name"
-                        placeholder="999.888.777-66"
-                        autocomplete="off"
-                        pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"
-                        required
-                    />
+                    <div>
+                        <label for="full-name">Seu nome:</label>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            id="full-name"
+                            placeholder="José Luís"
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
 
                     <div>
+                        <label for="email">Seu email:</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            placeholder="eu@exemplo.com.br"
+                            autocomplete="off"
+                            required
+                        />
+                    </div>
+
+                    <div>
+                        <label for="full-name">CPF:</label>
+                        <input 
+                            type="text" 
+                            name="cpf" 
+                            id="full-name"
+                            placeholder="999.888.777-66"
+                            autocomplete="off"
+                            pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})"
+                            required
+                        />
+                    </div>
+
+                    <div class="radio-input-box">
                         <input 
                             type="radio" 
                             name="gender" 
@@ -81,7 +87,7 @@
                             value="male"
                         />
                         <label for="gender-male">Masculino</label>
-
+    
                         <input 
                             type="radio" 
                             name="gender" 
@@ -90,7 +96,7 @@
                         />
                         <label for="gender-female">Feminino</label>
                     </div>
-
+                    
                     <button class="btn-algo-form" type="submit">Enviar</button>
                 </form>
             </div>
